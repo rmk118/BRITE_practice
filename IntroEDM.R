@@ -205,7 +205,7 @@ rho_thetaL = PredictNonlinear(dataFrame = dat2, columns = "Logi2",
                               target = "Logi2", lib = "1 500", pred = "501 1000", theta=seq(0,2,0.1), E = 2)
 rho_vs_thetaL<-as.ggplot(~plot(rho_thetaL, type="l",ylim=c(0.6,1)))
 
-grid.arrange(red_time_series, logi_time_series, optimalRhoRed, optimalRhoLogi, rho_vs_thetaR, rho_vs_thetaL, ncol=2)
+grid.arrange(red_time_series, logi_time_series, optimalRhoRed, optimalRhoLogi, rho_vs_thetaR, rho_vs_thetaL, ncol=2) #SUCCESS
 
 # # time series of red noise and logistic map - error way --------------------------------------------------------------------
 # dat <- read.csv('ESM2_Data_noise.csv',header=T)
